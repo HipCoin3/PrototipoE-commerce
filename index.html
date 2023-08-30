@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+<body>
+  <section id="carrinho"
+   class="fixed top-0 right-0  bg-cyan-950 h-screen  w-[380px] shadow-2xl text-slate-200"> 
+    <div id="cabecalho-carrinho" class="justify-between flex m-5">
+      
+      <p>Meu Carrinho</p>
+      <button style="color:#a1c5f7c2;" id="fechar-carrinho"><i class="fa-solid fa-circle-xmark"></i></button>
+    
+    </div>  
+  
+    <section id="produtos-carrinho">
+      <p>Camisa Larga com Bolsos</p>
+      <p>Jaqueta com Efeito</p>
+      <p>Camisa Larga Acolchoada</p>
+    </section>
+
+    <p id="preco-compra">R$300</p>
+    <button class=" p-1 bg-cyan-300 text-slate-900" id="finaliza-compra">Finalizar Compra</button>
+
+  </section>
+  <header class="flex justify-between bg-cyan-950 h-16 p-2">
+
+    <img 
+      src="./assets/logo/hashtag.svg" 
+      alt="Logo-Magazine Hash"
+      >
+  
+    <div class="container-button text-slate-200 flex gap-2 m-3 items-end ">
+      
+      <button id="abrir-carrinho">
+        <i class="fa-solid fa-cart-shopping" style="color:#a1c5f7c2;"></i>
+      </button>
+      
+      <button>
+        <i class="fa-solid fa-user" style="color: #a1c5f7c2;"></i>
+      </button>
+    
+    </div>  
+  
+  </header>
+  <main class="flex items-center">
+    <section id="product-container" class="flex flex-wrap ">
+   
+    </section>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
