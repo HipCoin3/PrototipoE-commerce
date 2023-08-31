@@ -5,50 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
+  <title>Magazine Hash</title>
 </head>
-<body>
+<body class=" flex-col items-center bg-stone-200">
+  <!-- Pág.Carrinho -->
   <section id="carrinho"
-   class="fixed top-0 right-0  bg-cyan-950 h-screen  w-[380px] shadow-2xl text-slate-200"> 
+   class="
+    fixed top-0 right-[-380px]
+    bg-cyan-950 h-screen w-[380px] 
+    shadow-md shadow-cyan-800 text-cyan-100
+    z-50 duration-500 border-l border-cyan-950
+    flex flex-col justify-between
+    "
+    > 
+
     <div id="cabecalho-carrinho" class="justify-between flex m-5">
       
       <p>Meu Carrinho</p>
-      <button style="color:#a1c5f7c2;" id="fechar-carrinho"><i class="fa-solid fa-circle-xmark"></i></button>
+      <button class="text-[#a1c5f7c2]"  id="fechar-carrinho">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </button>
     
     </div>  
   
-    <section id="produtos-carrinho">
-      <p>Camisa Larga com Bolsos</p>
-      <p>Jaqueta com Efeito</p>
-      <p>Camisa Larga Acolchoada</p>
+    <section id="produtos-carrinho"
+    class="px-10 py-3">
+     
     </section>
 
-    <p id="preco-compra">R$300</p>
-    <button class=" p-1 bg-cyan-300 text-slate-900" id="finaliza-compra">Finalizar Compra</button>
+    <p id="preco-compra"
+    class="px-10 py-3 bg-cyan-800 shadow-inner shadow-cyan-900 "
+    >
+    R$300
+  </p>
+    <button 
+    class=" p-1 m-32 my-5 justify-center flex-row 
+    bg-cyan-700 text-sm"
+     id="finaliza-compra">
+     Finalizar Compra
+    </button>
 
   </section>
-  <header class="flex justify-between bg-cyan-950 h-16 p-2">
+  <!-- Header -->
+  <header class=
+  "sticky top-0 flex
+   flex-row justify-between 
+   bg-cyan-950 shadow-md 
+   shadow-cyan-200 h-16 px-4 
+   py-2 text-lg z-10"
+   >
 
     <img 
       src="./assets/logo/hashtag.svg" 
       alt="Logo-Magazine Hash"
+      class="flex justify-content flex-row "
       >
   
-    <div class="container-button text-slate-200 flex gap-2 m-3 items-end ">
+    <div class="container-button text-slate-200 flex gap-4 m-3 items-end ">
       
-      <button id="abrir-carrinho">
+      <button class="mx-2" id="abrir-carrinho">
         <i class="fa-solid fa-cart-shopping" style="color:#a1c5f7c2;"></i>
       </button>
       
-      <button>
+      <button class="mr-2">
         <i class="fa-solid fa-user" style="color: #a1c5f7c2;"></i>
       </button>
     
     </div>  
   
   </header>
-  <main class="flex items-center">
-    <section id="product-container" class="flex flex-wrap ">
+  <main class="flex flex-col items-center px-8 py-2">
+    <section id="product-container" class="flex flex-wrap justify-center px-8 gap-5">
    
     </section>
   </main>
