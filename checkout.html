@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="" href="../../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title> CheckOut </title>
+</head>
+<body class="bg-stone-200 flex flex-col h-screen">
+    <header class=
+    "sticky top-0 flex
+     flex-row justify-between 
+     bg-cyan-950 shadow-md 
+     shadow-cyan-200 h-14 px-4 
+     py-2 text-lg z-10"
+     >
+  
+      <img 
+        src="../../assets/logo/hashtag.svg" 
+        alt="Logo-Magazine Hash"
+        class="flex justify-content flex-row h-10"
+        >
+    
+      <div class="text-slate-200 flex gap-4 m-3 items-end ">
+        
+        
+      
+      </div>  
+    
+    </header>
+
+
+      <form class="flex w-[100%] px-5 py-10 gap-4 grow">
+
+        <section id="dados-usuario" 
+        class="w-1/3 overflow-y-auto bg-slate-300 rounded-lg py-8 px-6 items-center flex flex-col shadow-xl shadow-slate-600">
+
+          <h4 class="mb-5 text-center font-bold">Seus dados</h4>
+
+          <div class="flex flex-col px-10 py-5">
+            <label for="nome" class="font-bold text-sm mb-2">Nome </label>
+            <input type="text" 
+            id="nome" 
+            class="  rounded-sm px-2 border-none focus:outline-none  invalid:border-pink-500 invalid:text-pink-600
+            focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 w-80 font-light" 
+            placeholder=" Nome do usuário"
+            required
+            >
+          </div>
+        
+          <div class="flex flex-col px-10 py-5 ">
+            <label for="email" class="font-bold text-sm mb-2">Email </label>
+            <input type="email" 
+            id="email" 
+            class="  rounded-sm px-2 focus:outline-none  invalid:border-pink-500 invalid:text-pink-600
+            focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 w-80 font-light" 
+            placeholder=" Digite seu email"
+            required
+            >
+          </div>
+        
+          <div class="flex flex-col px-10 py-5  " >
+            <label for="password" class="font-bold text-sm mb-2">Senha </label>
+            <input type="password" 
+            id="senha" 
+            class="rounded-sm px-2 focus:outline-none  invalid:border-pink-500 invalid:text-pink-600
+            focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 w-80 font-light" 
+            placeholder=" Digite sua Senha"
+            required
+            >
+          </div>
+          
+          <div class="flex flex-col px-10 py-5 ">
+            <label for="tel" class="font-bold text-sm mb-2">Telefone</label>
+            <input type="tel" 
+            id="tel" 
+            class="rounded-sm px-2 focus:outline-none  invalid:border-pink-500 invalid:text-pink-600
+            focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 w-80 font-light" 
+            placeholder=" (XX) XXXXX-XXXX"
+            required
+            >
+          </div>
+        
+          <div class="flex flex-col px-10 py-5 ">
+            <label for="number" class="font-bold text-sm mb-2">CPF</label>
+            <input type="number" 
+            id="numero" 
+            class="rounded-sm px-2 focus:outline-none  invalid:border-pink-500 invalid:text-pink-600
+            focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 w-80 font-light" 
+            placeholder=" Digite seu CPF"
+            required
+            >
+          </div>
+        </section>
+        
+        <section id="dados-usuario" 
+        class="w-1/3 overflow-y-auto bg-slate-300 rounded-lg py-8 px-6 items-center flex flex-col  shadow-xl shadow-slate-600">
+         
+          <h4 class="mb-5 text-center font-bold">Forma de Pagamento</h4>
+
+          <div class="flex flex-col px-10 py-5">
+            <label for="numero-cartao" class="font-bold text-sm mb-2">Número do Cartão </label>
+            <input type="number" 
+            id="numero-cartao" 
+            class="rounded-sm px-2 border-none focus:outline-none  invalid:border-pink-500 invalid:text-pink-600
+            focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 w-80 font-light" 
+            placeholder=" 0000 0000 0000 0000"
+            required
+            >
+          </div>
+         
+          <div class="flex flex-row gap-5">
+            <div class="flex flex-col px-15 py-5 w-1/2">
+              <label for="validade" class="font-bold text-sm mb-2"> CVV </label>
+              <input type="number" 
+              id="validade" 
+              class="rounded-sm px-2 border-none focus:outline-none  invalid:border-pink-500 invalid:text-pink-600
+              focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 font-light" 
+              placeholder=" 000"
+              required
+              >
+          
+            </div>
+            <div class="flex flex-col px-15 py-5 w-1/2">
+              <label for="numero-cartao" class="font-bold text-sm mb-2"> Validade </label>
+              <input type="number" 
+              id="numero-cartao" 
+              class="rounded-sm px-2 border-none focus:outline-none  invalid:border-pink-500 invalid:text-pink-600
+              focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 font-light" 
+              placeholder=" 00/00"
+              required
+              >
+          
+            </div>
+          </div>
+
+          <h4 class="mb-3 mt-6 text-center font-bold">Endereço de Entrega</h5>
+
+          
+            <div class="flex flex-col px-10 py-5 ">
+              <label for="cep" class="font-bold text-sm mb-2"> CEP </label>
+              <input type="number" 
+              id="cep" 
+              class="rounded-sm px-2 border-none focus:outline-none w-80 invalid:border-pink-500 invalid:text-pink-600
+              focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 font-light" 
+              placeholder=" 00000-000"
+              required
+              >
+          
+            </div>
+            <div class="flex flex-col px-10 py-5 ">
+              <label for="endereco" class="font-bold text-sm mb-2"> Endereço </label>
+              <input type="text" 
+              id="endereco" 
+              class="rounded-sm px-2 border-none focus:outline-none w-80 invalid:border-pink-500 invalid:text-pink-600
+              focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 font-light" 
+              placeholder=" Ex.: Rua Alfredo Neves, Bairro joão alberto"
+              required
+              >
+            </div>
+
+            <div class="flex flex-row gap-5">
+              <div class="flex flex-col px-15 py-5 w-1/2">
+                <label for="Complemento" class="font-bold text-sm mb-2"> Complemento </label>
+                <input type="text" 
+                id="complemento" 
+                class="rounded-sm px-2 border-none focus:outline-none  invalid:border-pink-500 invalid:text-pink-600
+                focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 font-light" 
+                placeholder=" Ex.: Em frente ao posto"
+                
+                >
+            
+              </div>
+            
+              <div class="flex flex-col px-15 py-5 w-1/2">
+                <label for="rua" class="font-bold text-sm mb-2"> Número da Rua </label>
+                <input type="text" 
+                id="rua" 
+                class="rounded-sm px-2 border-none focus:outline-none  invalid:border-pink-500 invalid:text-pink-600
+                focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 font-light" 
+                placeholder=" Ex.: 60"
+                required
+                >
+              </div>
+            </div>
+            
+            <div class="flex flex-row gap-5">
+              <div class="flex flex-col px-15 py-5 w-1/2">
+                <label for="cidade" class="font-bold text-sm mb-2"> Cidade </label>
+                <input type="text" 
+                id="cidade" 
+                class="rounded-sm px-2 border-none focus:outline-none  invalid:border-pink-500 invalid:text-pink-600
+                focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 font-light" 
+                placeholder=" Ex.: Paratí"
+                
+                >
+            
+              </div>
+            
+              <div class="flex flex-col px-15 py-5 w-1/2">
+                <label for="estado" class="font-bold text-sm mb-2"> Estado </label>
+                <input type="text" 
+                id="estado" 
+                class="rounded-sm px-2 border-none focus:outline-none  invalid:border-pink-500 invalid:text-pink-600
+                focus:invalid:border-pink-500 focus:invalid:ring-pink-500 py-1 font-light" 
+                placeholder=" Ex.: Rio de Janeiro"
+                required
+                >
+              </div>
+            </div>
+            
+        </section>
+    
+        <section id="produtos-checkout" 
+        class="
+        h-1/3 bg-slate-300 rounded-lg py-8
+         px-6 items-center flex flex-col  shadow-xl shadow-slate-600 "
+         >
+         <section id="container-produtos-checkout" 
+         class="
+         w-3/4 bg-slate-400 rounded-lg py-8 overflow-y-auto
+          px-6 items-center flex flex-col  shadow-xl shadow-slate-600">
+         </section>
+        
+         <section id="celula-checkout" 
+         class="
+         w-1/3 bg-slate-400 rounded-lg py-8
+          px-6 items-center flex flex-col  shadow-xl shadow-slate-600">
+         </section>
+  
+          
+
+        </section>
+        
+        
+        
+      </form>
+    
+      <script src="./src/components/checkout.js" type="module"></script>
+</body>
+</html>

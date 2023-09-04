@@ -1,5 +1,5 @@
-import { salvarLocalStorege, lerLocalStorege } from "./utils/armazenandoLocalStorege";
-import { catalogo } from "./utils/utilidade";
+import { salvarLocalStorege, lerLocalStorege } from "../utils/armazenandoLocalStorege";
+import { catalogo } from "../utils/catalogoProdutos";
 
 // Um dicionário que "busca"/manipula os produtos pelo ID.
 const idsProdutosCarrinhoComQuantidade = lerLocalStorege('carrinho') ?? {};

@@ -1,4 +1,4 @@
-import { catalogo } from "./utils/utilidade";
+import { catalogo } from "../utils/catalogoProdutos";
 import { addAoCarrinho } from "./menuCarrinho";
 
 
@@ -13,9 +13,9 @@ export function catalogoProdutos() {
         shadow-cyan-900
         w-48 my-1.5 mx-1.5 flex 
         flex-col p-2 justify-between 
-        group rounded-lg' 
+        group rounded-lg ${produtoCatalogo.feminino ? 'feminino' : 'masculino'} ' 
          
-         id="product-card-${catalogo.id}"
+         id="card-produto-${produtoCatalogo.id}"
          >
         <img
         src="./assets/img/${produtoCatalogo.imagem}"
@@ -36,7 +36,7 @@ export function catalogoProdutos() {
         </button>
         </div>
 `
-        document.getElementById('product-container').innerHTML += cartaoProduto;
+        document.getElementById('container-produto').innerHTML += cartaoProduto;
     };
 
     for (const produtoCatalogo of catalogo) {

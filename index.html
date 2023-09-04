@@ -40,9 +40,10 @@
   </p>
     <button 
     class=" p-1 m-32 my-5 justify-center flex-row 
-    bg-cyan-700 text-sm"
+    bg-cyan-700 text-sm  hover:bg-cyan-900
+    duration-300 "
      id="finaliza-compra">
-     Finalizar Compra
+     <a href="./checkout.html">Finalizar Compra</a>
     </button>
 
   </section>
@@ -75,7 +76,26 @@
   
   </header>
   <main class="flex flex-col items-center px-8 py-2">
-    <section id="product-container" class="flex flex-wrap justify-center px-8 gap-5">
+
+    <section id="filtros" class="p-6 flex " >
+     
+      <div class="mr-2">
+        <input id="exibir-todos" name="filtro" type="radio" class="peer hidden" checked >
+        <label for="exibir-todos" class="peer-checked:bg-cyan-900 peer-checked:text-zinc-900  hover:duration-100 hover:bg-zinc-400 peer-checked:font-bold px-2 rounded-md select-none cursor-pointer">Todos</label>
+      </div>
+     
+      <div class="mr-2">
+        <input id="exibir-masculino" name="filtro" type="radio" class="peer hidden" >
+        <label for="exibir-masculino" class="peer-checked:bg-cyan-900 peer-checked:text-zinc-900  hover:duration-100 hover:bg-zinc-400 px-2 rounded-md select-none cursor-pointer">Masculinos</label>
+      </div>
+      
+      <div>
+        <input id="exibir-feminino" name="filtro" type="radio" class="peer hidden">
+        <label for="exibir-feminino" class="peer-checked:bg-cyan-900 peer-checked:text-zinc-900  hover:duration-100 hover:bg-zinc-400 px-2 rounded-md select-none cursor-pointer">Femininos</label>
+      </div>
+    </section>
+
+    <section id="container-produto" class="flex flex-wrap justify-center px-8 gap-5">
    
     </section>
   </main>
